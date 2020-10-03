@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	    char h[9]={'!','#','$','%','&','*','@','^','~' };
+	    cin>>n;
+	    string a,b;
+	    for(char i=0;i<n;i++)
+	    cin>>a[i];
+	     for(char i=0;i<n;i++)
+	    cin>>b[i];
+	    for(char i=0;i<9;i++)
+	    {
+	        for(char j=0;j<n;j++)
+	        {
+	        if(h[i]==a[j])
+	        {
+	        cout<<h[i]<<" ";
+	        break;
+	        }
+	        }
+	    }
+	    cout<<endl;
+	     for(char i=0;i<9;i++)
+	    {
+	        for(char j=0;j<n;j++)
+	        if(h[i]==b[j])
+	        {
+	        cout<<h[i]<<" ";
+	        break;
+	        }
+	    }
+	    cout<<endl;
+	}
+	return 0;
+}
